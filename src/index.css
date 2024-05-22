@@ -1,0 +1,9 @@
+.light {
+    z-index: 99;
+    background-color: white !important;
+}
+
+.dark {
+    z-index: 99;
+    background-color: #071122 !important;
+}

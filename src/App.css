@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary {
+  background: #6470a8 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-primary:hover {
+  background: #41529c !important;
+}
+
+.text-primary {
+  color: #9399b3 !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#vishal {
+  padding-top: 6rem !important;
+}
+
+#vishal>div:nth-child(1) {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#vishal h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#vishal img {
+  border-radius: 87% 13% 88% 12% / 10% 92% 8% 90%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 3rem;
+}
+
+.about {
+  padding-top: 5rem;
+}
+
+.about h1,
+.projects h1,
+.contact h1,
+.skills h1 {
+  border-bottom: 3px solid rgb(110, 102, 223);
+  padding-bottom: 4px;
+  z-index: 99;
+}
+
+.about img {
+  width: auto;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.skills {
+  padding-top: 5rem;
+}
+
+.skills img {
+  width: auto;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.projects {
+  padding-top: 5rem;
+}
+
+.projects img {
+  height: 200px;
+}
+
+.projects .row {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.relative {
+  cursor: pointer;
+}
+
+.relative img {
+  transition: all 1s ease-in-out;
+}
+
+.absolute {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.658);
+  width: 100%;
+  top: 270px;
+  animation: BottomAnimation 1s ease-in-out;
+}
+
+.relative:hover .absolute {
+  top: 0px;
+  animation: TopAnimation 1s ease-in-out;
+}
+
+@keyframes TopAnimation {
+  from {
+    top: 200px;
+  }
+
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes BottomAnimation {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 200px;
+  }
+}
+
+.contact {
+  padding-top: 5rem;
+}
+
+.contact form {
+  max-width: 700px;
+  margin: auto;
+}
+
+@media(max-width:750px) {
+  #vishal>div:nth-child(1) {
+    height: auto;
+  }
+
+  #vishal img {
+    height: 400px;
+    width: 80%;
+  }
+
+  #vishal h1 {
+    font-size: 35px;
+  }
+
+  .links {
+    margin-top: 2rem;
+  }
+
+  .about img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .skills img {
+    height: 60px;
+    padding: 10px;
+  }
+
+  .projects .row {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
